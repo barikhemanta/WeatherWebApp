@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live - Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>Weather App</header>
+    <main>
+      <div class="search-body">
+        <input
+          type="search"
+          name=""
+          id="location-input"
+          placeholder="Enter Location"
+          style="height: 30px; border-radius: 6px"
+        />
+        <button type="submit" id="submit">Check</button>
+      </div>
+      <div id="unit-toggle">
+        <label for="celsius">Celsius</label>
+        <input type="radio" id="celsius" name="unit" value="metric" checked />
+        <label for="fahrenheit">Fahrenheit</label>
+        <input type="radio" id="fahrenheit" name="unit" value="imperial" />
+        <label for="kelvin">Kelvin</label>
+        <input type="radio" id="kelvin" name="unit" value="kelvin" />
+      </div>
+      <div id="weather-info"></div>
+      <div id="error-msg"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
